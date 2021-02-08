@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Page</title>
+        <link />
+        <style>
+            .about{
+               font-size: 2rem;
+            }
+            .container_1{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .img{
+                margin-right: 20px;
+                margin-top: 50px;
+            }
+            /* Slideshow container */
+            .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            }
+
+            .para{
+                display: inline;
+                width: 400px;
+                /* margin-left: -60px; */
+            }
+            .container_2{
+                margin-left: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container_1">
+            <section class="para">
+                <h1 class="about">About Us</h1>
+                <p  > sagxkkV.jcshvahvjTo get all records from the table :
+                    select * from emp
+                
+                To select 2 coloumn :
+                    select ename, salary from emp
+                
+                We can use Operators :
+                    select ename, salary, salary+salary*0.3 from emp
+                
+                Use alias (new_sal) :
+                    select ename, salary, salary+salary*0.3 new_sal from emp
+                we can give alias to new and old cell.To remove _ we use "new sal" in command.
+                
+                ----------------------------
+                
+                To create table :
+                    create table emp_raipur (empid number , ename varchar(20),salary number)
+                
+                To insert row in table : 
+                    insert into emp_raipur values(1,"john",30000)
+                
+                To insert less command:
+                    insert into emp_raipur values(2,"mita",null)
+                
+                To insert coloumn vise :
+                    insert into emp_raipur (ename,salary) values("mita",null)
+                ------------------------
+                ORDER BY CLAUSE :-
+                
+                To sort data we have order by clause :
+                    select * from emp order by ename //by default it is asccending order
+                we can make it descending using :
+                    select * from emp order by ename desc //descending order
+                
+                
+                -----------------------</p>
+        </section>
+            <span class="img"><img src="#" width="500" height="300"/></span>
+            
+        </div>
+        
+        <div class="container_2">
+            <h2>Information</h2>
+            <p>Data is case sensitive not the query.
+                select * from emp where deptid=10 and salary>30000
+            
+            select all employee deptid 10 and developer.
+                select * from emp where deptid=10 or job='Developer'
+            
+            get the information of employee have deptid 10,20,30:
+                select * from emp where deptid=10 or deptid=20 or deptid=30
+            
+            all developers from dept 10 and 20 : 
+                select * from emp where job='Developer' and (deptid=10 or deptid=20)</p>
+            
+        </div>
+    </body>
+</html>
